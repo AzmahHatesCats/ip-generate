@@ -83,9 +83,10 @@ def waysy2():
 
 print("Loading Successful!")
 print()
-print("Would like it to be the proper way (y) or the random go way (y2)?: ")
-ways = input()
-if ways == "y":
-    waysy()
-else:
+if __name__ == "__main__":
+    print("Would like it to be the proper way (y) or the random go way (y2)?: ")
+    ways = input()
+    if ways == "y":
+        waysy()
+    else:
     waysy2()
